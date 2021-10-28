@@ -14,6 +14,7 @@ primers_df = pd.read_excel(primers_file, engine='openpyxl')  # Representing the 
 primers_df['Start'] = ""
 primers_df['End'] = ""
 
+
 # Iterating over the primers_df and finding the Start & End pos of the primers
 for index, row in primers_df.iterrows():
     primer_seq = row['Sequence']
